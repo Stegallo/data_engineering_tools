@@ -1,11 +1,14 @@
-def greet(subject):
-    return 'hello ' + subject
+def greet(subject: str) -> str:
+    return "hello " + subject
 
-def say_hello():
-    print(greet('world'))
 
-def main():
+def say_hello() -> None:
+    print(greet("world"))
+
+
+def main() -> None:
     say_hello()
 
-if __name__ == '__main__':
+
+if __name__ == "__main__":
     main()
